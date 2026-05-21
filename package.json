@@ -1,0 +1,37 @@
+{
+  "name": "mdpdf-cli",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "mdpdf": "./src/cli.ts"
+  },
+  "scripts": {
+    "start": "bun run src/cli.ts"
+  },
+  "dependencies": {
+    "github-slugger": "^2.0.0",
+    "hast-util-to-string": "^3.0.1",
+    "mermaid": "^11.14.0",
+    "puppeteer": "^24.42.0",
+    "rehype-autolink-headings": "^7.1.0",
+    "rehype-pretty-code": "^0.14.3",
+    "rehype-raw": "^7.0.0",
+    "rehype-sanitize": "^6.0.0",
+    "rehype-slug": "^6.0.0",
+    "rehype-stringify": "^10.0.1",
+    "remark-gfm": "^4.0.1",
+    "remark-parse": "^11.0.0",
+    "remark-rehype": "^11.1.2",
+    "shiki": "^4.0.2",
+    "unified": "^11.0.5",
+    "unist-util-visit": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "typescript": "^5"
+  },
+  "trustedDependencies": [
+    "puppeteer"
+  ]
+}
