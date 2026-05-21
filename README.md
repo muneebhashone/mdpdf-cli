@@ -8,10 +8,32 @@ Convert a Markdown file or folder of Markdown into one beautifully-styled PDF.
 bun install
 ```
 
+### Global `mdpdf` command (optional)
+
+Register this package globally so you can run `mdpdf` from anywhere:
+
+```
+bun link
+```
+
+From any other project or directory:
+
+```
+mdpdf <input> [-o output.pdf]
+```
+
+To unlink later: `bun unlink` (run inside this repo).
+
 ## Usage
 
 ```
 bun run src/cli.ts <input> [-o output.pdf]
+```
+
+Or, after `bun link`:
+
+```
+mdpdf <input> [-o output.pdf]
 ```
 
 - `<input>` — a `.md` file, or a folder containing `.md` files (recursive). For folders, the entry is picked in this order: `README.md`, `index.md`, then shallowest `.md` alphabetically.
