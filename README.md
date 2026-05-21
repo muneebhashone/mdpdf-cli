@@ -46,6 +46,16 @@ bun run src/cli.ts notes.md
 bun run src/cli.ts ./docs -o handbook.pdf
 ```
 
+## Use as an agent skill (skills.sh)
+
+This repo ships an [Agent Skill](https://agentskills.io) at `skills/mdpdf/`, installable via the [skills.sh](https://www.skills.sh) CLI:
+
+```
+npx skills add muneebhashone/mdpdf-cli --skill mdpdf
+```
+
+After installing, AI agents (Claude Code, Cursor, etc.) will know when to invoke `mdpdf` and how to use it.
+
 ## What it does
 
 - Renders Markdown (GFM) → HTML with Shiki syntax highlighting and Mermaid diagrams.
